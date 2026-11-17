@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ihwan - Portofolio & Perjalanan Saya</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4f46e5; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 relative overflow-x-hidden">
+
+    <!-- BACKGROUND GLOW EFFECTS -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
+    <div class="absolute top-1/3 right-10 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl pointer-events-none animate-pulse" style="animation-duration: 4s;"></div>
+    <div class="absolute bottom-1/4 left-10 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-slate-950/70 backdrop-blur-md border-b border-slate-800/80 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-pink-500 bg-clip-text text-transparent">About me<span class="text-white">.</span></a>
+            <div class="hidden md:flex space-x-6 font-medium text-sm text-slate-300">
+                <a href="#beranda" class="hover:text-indigo-400 transition duration-300">Beranda</a>
+                <a href="#tentang" class="hover:text-indigo-400 transition duration-300">Tentang</a>
+                <a href="#pendidikan" class="hover:text-indigo-400 transition duration-300">Pendidikan</a>
+                <a href="#organisasi" class="hover:text-indigo-400 transition duration-300">Organisasi</a>
+                <a href="#proyek" class="hover:text-indigo-400 transition duration-300">Proyek</a>
+                <a href="#kontak" class="hover:text-indigo-400 transition duration-300">Kontak</a>
+            </div>
+            <a href="#kontak" class="hidden md:inline-block bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-90 transition duration-300 shadow-lg shadow-indigo-500/25">Hubungi Saya</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="pt-36 pb-24 md:pt-44 md:pb-32 px-6 relative">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <span class="inline-block bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4 animate-bounce">Hello👋</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Welcome to <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">My Portofolio</span></h1>
+                <p class="text-slate-400 mb-6 max-w-lg mx-auto md:mx-0 leading-relaxed">Nama Muahmmad Ihwan Lahir di Sidrap, 22 Maret 2004. Saat ini sedang menempuh pendidikan di <span class="text-white font-semibold">Universitas Handayani Makassar</span></p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#pendidikan" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl font-medium shadow-lg shadow-indigo-500/30 hover:scale-105 transition duration-300">Jelajahi Profil</a>
+                    <a href="#kontak" class="border border-slate-700 bg-slate-900/50 px-6 py-3 rounded-xl font-medium hover:border-indigo-500 hover:text-indigo-400 transition duration-300">Hubungi</a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+                    <div class="relative w-full h-full rounded-full overflow-hidden border-2 border-slate-700 bg-slate-900 flex items-center justify-center">
+                        <img src="myportofolio.jpeg" alt="Muhammad Ihwan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG SECTION -->
+    <section id="tentang" class="py-24 px-6 relative">
+        <div class="max-w-4xl mx-auto text-center bg-slate-900/40 border border-slate-800 p-8 md:p-12 rounded-3xl backdrop-blur-sm shadow-xl">
+            <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mb-8"></div>
+            <p class="text-slate-300 leading-relaxed text-base md:text-lg">
+                Nama <span class="text-white font-semibold">Muhammad Ihwan</span>, lahir di Sidrap pada tanggal 22 Maret 2004. Perjalanan pendidikan dimulai dari TK di Rappang, dilanjutkan menempuh pendidikan dasar hingga tingkat menengah di Pondok Pesantren, dan saat ini aktif berkuliah di Universitas Handayani Makassar sejak tahun 2023. Memiliki pengalaman kepengurusan organisasi baik di lingkungan pesantren maupun kampus.
+            </p>
+        </div>
+    </section>
+
+    <!-- RIWAYAT PENDIDIKAN SECTION (INTERAKTIF HOVER) -->
+    <section id="pendidikan" class="py-24 px-6 max-w-4xl mx-auto relative">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Riwayat Pendidikan</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mb-4"></div>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Pendidikan 1 -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                    <h3 class="text-xl font-bold text-white">Universitas Handayani Makassar</h3>
+                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20 w-fit">2023 - Sekarang</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        Menempuh pendidikan tinggi di bidang ilmu komputer dan teknologi di Universitas Handayani Makassar hingga saat ini, serta aktif dalam kegiatan kemahasiswaan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pendidikan 2 -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                    <h3 class="text-xl font-bold text-white">Madrasah Aliyah (MA) - Pondok Pesantren</h3>
+                    <span class="text-xs font-semibold text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-md border border-pink-500/20 w-fit">2019 - 2023</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        Menyelesaikan pendidikan tingkat menengah atas di pondok pesantren yang sama dengan memperdalam ilmu agama, kedisiplinan, dan keorganisasian santri.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pendidikan 3 -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                    <h3 class="text-xl font-bold text-white">Madrasah Tsanawiyah (MTs) - Pondok Pesantren</h3>
+                    <span class="text-xs font-semibold text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-md border border-pink-500/20 w-fit">2017 - 2019</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        Melanjutkan pendidikan tingkat menengah pertama di lingkungan pondok pesantren, membentuk karakter mandiri dan bersosialisasi dengan sesama santri.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pendidikan 4 -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                    <h3 class="text-xl font-bold text-white">Sekolah Dasar (SD)</h3>
+                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20 w-fit">2010 - 2017</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        Menyelesaikan pendidikan dasar selama enam tahun penuh dari tahun 2010 hingga lulus pada tahun 2017.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pendidikan 5 -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                    <h3 class="text-xl font-bold text-white">Taman Kanak-Kanak (TK)</h3>
+                    <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20 w-fit">Masa Kecil</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        Menempuh pendidikan anak usia dini pertama kali di wilayah Rappang, Sidrap.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RIWAYAT ORGANISASI SECTION (INTERAKTIF HOVER) -->
+    <section id="organisasi" class="py-24 px-6 max-w-4xl mx-auto relative">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Riwayat Organisasi</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-slate-400">Pengalaman kepemimpinan, keaktifan, dan peran dalam berbagai organisasi.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Organisasi 1: HIMAKOM -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">HIMAKOM</h3>
+                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20">Kampus</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        <strong class="text-indigo-300">Himpunan Mahasiswa Komputer:</strong> Aktif sebagai anggota yang mengikuti berbagai program kerja, pengembangan skill teknologi, dan kegiatan mahasiswa di Universitas Handayani Makassar.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Organisasi 2: HMI -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">HMI</h3>
+                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20">Kampus</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        <strong class="text-indigo-300">Himpunan Mahasiswa Islam:</strong> Aktif sebagai kader dalam menempa wawasan keislaman, kebangsaan, intelektual, serta jiwa kepemimpinan organisasi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Organisasi 3: OSIM -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">OSIM (Dokumentasi)</h3>
+                    <span class="text-xs font-semibold text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-md border border-pink-500/20">Pesantren</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        <strong class="text-pink-300">Organisasi Siswa Intra Madrasah:</strong> Bertugas sebagai bagian kordinator dokumentasi, bertanggung jawab mengabadikan setiap momen penting dan event kegiatan di lingkungan pondok pesantren.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Organisasi 4: PMR -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">PMR (Sekretaris)</h3>
+                    <span class="text-xs font-semibold text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-md border border-pink-500/20">Pesantren</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        <strong class="text-pink-300">Palang Merah Remaja:</strong> Mengemban amanah sebagai sekretaris dalam mengelola administrasi, surat-menyurat, serta mendukung program pelatihan kesehatan & kemanusiaan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Organisasi 5: OPRA -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10 md:col-span-2">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">OPRA (Bagian Bahasa)</h3>
+                    <span class="text-xs font-semibold text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-md border border-pink-500/20">Pesantren</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        <strong class="text-pink-300">Organisasi Pelajar Rahmatul Asri:</strong> Aktif di bagian bahasa, membimbing, mengevaluasi, serta mengoordinasikan kedisiplinan penggunaan bahasa resmi (Arab/Inggris) bagi para santri.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROYEK SECTION (INTERAKTIF HOVER) -->
+    <section id="proyek" class="py-24 px-6 max-w-4xl mx-auto relative">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Proyek & Kegiatan</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mb-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Proyek 1 -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">Kuliah di UHM</h3>
+                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20">2023 - Sekarang</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        Aktif belajar mendalami ilmu komputer, pemecahan masalah logika, teknologi digital, dan pengembangan perangkat lunak di kampus.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Proyek 2 -->
+            <div class="interactive-card bg-slate-900/60 border border-slate-800 p-6 rounded-2xl cursor-pointer transition-all duration-300 hover:border-indigo-500 hover:bg-slate-900 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">Portofolio Pribadi</h3>
+                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md border border-indigo-500/20">Web Dev</span>
+                </div>
+                <div class="expand-desc max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out mt-0">
+                    <p class="text-slate-400 text-sm pt-3 border-t border-slate-800 mt-3">
+                        Membuat website profil pribadi interaktif menggunakan HTML dan Tailwind CSS dengan efek animasi modern dan responsif.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & SOSIAL MEDIA SECTION -->
+    <section id="kontak" class="py-24 px-6 max-w-4xl mx-auto text-center relative">
+        <h2 class="text-3xl font-bold mb-4">Mari Terhubung</h2>
+        <div class="w-16 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full mb-4"></div>
+        <p class="text-slate-400 mb-8">Tertarik berdiskusi atau ingin terhubung? Anda dapat menghubungi saya melalui media sosial yang tersedia di bawah ini.</p>
+        
+        <div class="flex flex-wrap justify-center gap-4 mb-10">
+            <a href="https://wa.me/6282196037710" target="_blank" class="flex items-center gap-2 bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 px-5 py-3 rounded-xl hover:bg-emerald-600/30 transition">
+                <span class="font-medium">WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/ihwan___4?vrfl=MjR4NHE5bzM3b25p" target="_blank" class="flex items-center gap-2 bg-pink-600/20 border border-pink-500/30 text-pink-400 px-5 py-3 rounded-xl hover:bg-pink-600/30 transition">
+                <span class="font-medium">Instagram</span>
+            </a>
+            <a href="https://www.tiktok.com/@zixer__22?_r=1&_t=ZS-9BSs0yXhuOP" target="_blank" class="flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-5 py-3 rounded-xl hover:border-indigo-500 transition">
+                <span class="font-medium">TikTok</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-slate-500 text-sm relative">
+        <p>&copy; 2026 Muhammad Ihwan. Dibuat dengan HTML & Tailwind CSS.</p>
+    </footer>
+
+    <!-- SCRIPT JAVASCRIPT UNTUK EFEK ANIMASI HOVER DI SEMUA BAGIAN -->
+    <script>
+        const cards = document.querySelectorAll('.interactive-card');
+
+        cards.forEach(card => {
+            const desc = card.querySelector('.expand-desc');
+
+            // Ketika kursor masuk ke kotak
+            card.addEventListener('mouseenter', () => {
+                desc.style.maxHeight = desc.scrollHeight + "px";
+                desc.style.opacity = "1";
+                desc.style.marginTop = "12px";
+            });
+
+            // Ketika kursor keluar dari kotak
+            card.addEventListener('mouseleave', () => {
+                desc.style.maxHeight = "0";
+                desc.style.opacity = "0";
+                desc.style.marginTop = "0";
+            });
+        });
+    </script>
+
+</body>
+</html>
